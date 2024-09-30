@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body align="center">
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form id="registration-form">
+            
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+        
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+           
+            <label for="nationality">Nationality</label>
+            <select id="nationality" name="nationality" required>
+                <option value="">Select your nationality</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+            </select>
+
+           
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+           
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+         
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            
+            <label for="gender">Gender</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>
+
+            
+            <label class="terms">
+                <input type="checkbox" name="terms" required> I agree to the <a href="#">terms and conditions</a>
+            </label>
+
+           
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>

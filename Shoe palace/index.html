@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streetkicks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>streetkicks </h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="sneakers.html">Sneakers</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="streetware.html">Streetwear</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a brand, a model...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="icons">
+            <i class="fas fa-user" href="profile.html"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+    </header>
+    <section class="promo-section">
+        <div class="image-container">
+            <img src="wallpaper.jpeg" alt="Back to School Sneakers">
+        </div>
+        <div class="promo-content">
+            <h2>Back to School</h2>
+            <p>Discover our selection of sneakers for the start of the school year!</p>
+            <a href="#" class="promo-button">Discover</a>
+        </div>
+    </section>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="Nike dunk.jpeg" alt="Nike Dunk">
+                <p>Nike Dunk</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Air jordan 4.jpeg" alt="Air Jordan 4">
+                <p>Air Jordan 4</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Air Jordan 1.jpeg" alt="Air Jordan 1">
+                <p>Air Jordan 1</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Air Max Plus.jpeg" alt="Air Max Plus TN">
+                <p>Air Max Plus TN</p>
+            </div>
+            <div class="carousel-item">
+                <img src="New balance.jpeg" alt="New Balance 2002R">
+                <p>New Balance 2002R</p>
+            </div>
+            <div class="carousel-item">
+                <img src="JORDAN Jordan Jumpman.jpeg" alt="Nike Air Force 1">
+                <p>JORDAN Jumpman</p>
+            </div>
+            <div class="carousel-item">
+                <img src="NIKE Air Force 1.jpeg" alt="Nike Air Force 1">
+                <p>Nike Air Force 1</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Adidas Campus.jpeg" alt="Nike Air Force 1">
+                <p>Adidas campus</p>
+            </div>
+            <div class="carousel-item">
+                <img src="NIKE Air Force 1.jpeg" alt="Nike Air Force 1">
+                <p>Nike Air Force 1</p>
+            </div>
+            <div class="carousel-item">
+                <img src="adidas  Samba.jpeg" alt="Nike Air Force 1">
+                <p>Sambas</p>
+            </div>
+        </div>
+    </div>
+    <script  src="script.js"></script>
+    <section class="about-us"></section>
+        <h2 align="center">About us</h2>
+        <p align="center">
+            At StreetKicks, we offer a curated selection of quality footwear for all occasions.<br>
+            From casual to formal, we bring you the latest trends and timeless classics at competitive prices.<br>
+            Our seamless online shopping experience ensures fast delivery, secure payments, and an easy return policy.<br>
+         </p>
+         <br>
+         <h3 align="center">Why Choose us</h3>
+         <p align="center">
+            We prioritize customer satisfaction by offering exceptional service,<br>
+            unbeatable prices, and high-quality products, making us the go-to online shoe store.<br>
+            Shop with us for style, comfort, and confidence in every step!<br>
+         </p>
+
+         <div class="newsletter-container">
+            <h1 class="newsletter-title" align="center">The StreetKicks newsletter</h1>
+            <p class="newsletter-description" align="center">Register and benefit from 1200 KSH off your first order of 5000 KSH or more.</p>
+            <form id="newsletter-form" align="center">
+                <input type="email" id="email-input" placeholder="Enter your email address *" required>
+                <button type="submit" id="submit-button">Register</button>
+            </form>
+            <p id="message" class="message"></p>
+        </div>
+        <script>
+            document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var emailInput = document.getElementById('email-input').value;
+
+    
+    if (emailInput && emailInput.includes('@')) {
+        window.location.href = 'profile.html';
+    } else {
+        document.getElementById('message').textContent = 'Please enter a valid email address.';
+        document.getElementById('message').style.color = 'red';
+    }
+});
+
+
+        </script>
+         <footer class="footer">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Contact us</h3>
+                    <p>Contact Portal</p>
+                    <p>Our team is committed to responding to you within 24 to 48 business hours.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Wethenew's mission is to give all fans, enthusiasts, and curious people the opportunity to buy the limited products they like with complete confidence.</p>
+                    <p>Trustpilot</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Learn more</h3>
+                    <p>Our concept</p>
+                    <p>Conditions of our offers</p>
+                    <p>Wethenew Galeries Lafayette</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Our services</h3>
+                    <p>E-gift card</p>
+                    <p>FAQ</p>
+                    <p>Sell your product</p>
+                    <p>Shipping and delivery</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Our collections</h3>
+                    <p>Women's Sneakers</p>
+                    <p>Men's Sneakers</p>
+                    <p>Eco-responsible sneakers</p>
+                    <p>Less than 2000 ksh</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Find us on</h3>
+                    <div class="social-icons">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <div class="legal">
+                    <p>Legal notices | Privacy Policy | CGU | Terms and Conditions</p>
+                </div>
+                <div class="payment-methods">
+                    <p>Payment methods</p>
+                    <img src="visa.jpeg" alt="Visa">
+                    <img src="mastercard.jpeg" alt="MasterCard">
+                    <img src="amex.jpeg" alt="Amex">
+                </div>
+        
+                <div class="language-select">
+                    <select>
+                        <option value="fr">swahili</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+             
+</body>
+</html>
